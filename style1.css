@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main-container{
+    background-color: rgb(228, 227, 227) ;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2rem; */
+    
+    /* align-content: center; */
+    }
+    html {
+        font-size: 100%;
+      }
+      
+@media only screen and (max-width: 600px) {
+    html {
+      font-size: 75%;
+    }
+  }
+.basic-drawer{
+    height: 18rem;
+    width: 15rem;
+    border: 1px solid grey;
+    margin:6rem auto ;
+    background-color: white;
+    box-shadow: 0.2px 0.2px ;
+}
+.basic-drawer-component{
+     display: flex;
+     flex-direction: column;
+     margin:0rem 0.5rem ;
+}
+.icon-content{
+    display: flex;
+    gap: 2rem;
+    color: rgb(78, 77, 77);
+    padding:  1rem  0.5rem;
+}
+.drawer-title{
+    margin: 1rem;
+}
+.drawer-title p{
+    color: rgb(87, 85, 85);
+}
+.icon-content:hover{
+     background-color: rgb(219, 216, 216);
+     cursor: pointer;
+     border-radius: 4px;
+     color: rgb(7, 11, 233);
+}
+
+
+/* Permanent Drawer****************** */
+.outer-div{
+    width: 90vw;
+    height: 60vh;
+    margin-bottom: 6rem;
+    /* background-color: white; */
+    /* border: 1px solid blue ; */
+}
+.permanent-drawer{
+    display: flex;
+margin: auto;
+    width: 80rem;
+    /* border: 1px solid red; */
+    /* gap:5rem; */
+    background-color: white;
+}
+.permanent-drawer-title{
+       background-color: indigo;
+       padding: 1.2rem 2rem;
+       color:white;
+}.icon-content:focus{
+    background-color: rgb(219, 216, 216);
+    cursor: pointer;
+    border-radius: 4px;
+    /* color: red */
+}
+.side-bar{
+    /* border: 1px solid red; */
+    width: 16rem;
+    /* margin-right: 2rem; */
+}.permanent-drawer-content{
+    width: 100%;
+}
+.permanent-drawer-section{
+    height: 23rem;
+    overflow-y:scroll; 
+}
+.permanent-drawer .basic-drawer-component{
+    height: 23rem;
+    overflow-y: scroll;
+}
+/* dismissible drawer */
+
+    .permanent-drawer-title{
+        display: flex;
+        gap: 2rem;
+    }
+    .permanent-drawer-title  i{
+              margin: 11px;
+    }
+    .toggle-button:hover{
+        cursor: pointer;
+    }
+   .fold{
+       width: 0rem;
+   }
+   .side-bar-toggle{
+    /* border: 1px solid red; */
+    width: 16rem;
+   }
